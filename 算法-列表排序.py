@@ -47,6 +47,13 @@ for i in range(len(list_data)):
         if list_data[i] > list_data[j]:
             # 如果大于两个元素进行交换
             list_data[i],list_data[j] = list_data[j],list_data[i]
-print(list_data)
+# print(list_data
 
-
+print("""每天写一遍冒泡排序加深记忆""")
+list3 = [512,223,657,987,123,4,52,9871]
+for i in range(len(list3)):
+    for j in range(i+1, len(list3)):
+        if list3[i] > list3[j]:
+            list3[i], list3[j] = list3[j], list3[i]
+print(list3)
+print(sorted(list3, reverse=True))
