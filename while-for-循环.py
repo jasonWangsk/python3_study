@@ -13,18 +13,19 @@ print("**********************")
 for i in range(2,9):
     if i ==5:
         continue
-    print(i)
+    print(i,end="")
 
 
 print("**********************")
 for i in range(2,9):
     if i ==5:
         break
-    print(i)
+    print(i,end=" ")
 
 #输出1-100
 for i in range(1,101):
-    print(i)
+    print(i,end="")
+print()
 
 print("**********************")
 lit = ["哈哈","help",12,"jason"]
@@ -49,8 +50,9 @@ while x < 7:
     if x ==5:
         continue;  # =5 跳过继续下面的循环，，如果break 直接退出循环不进行下面的循环语句
 
-    print(x)
-
+    print(x, end=" ")
+print()
+print("**********************")
 
 #
 #
@@ -58,3 +60,11 @@ while x < 7:
 # while name == "old":
 #     print("good")
 #     break   # 得到结果后退出
+
+ii = 5
+n = 0
+ll = []
+while n < ii:
+    ll.append(n)
+    n +=1
+    print(ll)

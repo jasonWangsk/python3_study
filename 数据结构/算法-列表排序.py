@@ -1,6 +1,9 @@
 """
 python 列表和数组的区别
 ：列表中都数据类型不必相同，而 array中的类型必须全部相同
+ -- 列表的取值
+    从0开始正向取值
+    从-1开始逆向取值
 """
 
 # 使用内置函数sorted（）直接排序
@@ -55,5 +58,22 @@ for i in range(len(list3)):
     for j in range(i+1, len(list3)):
         if list3[i] > list3[j]:
             list3[i], list3[j] = list3[j], list3[i]
-print(list3)
-print(sorted(list3, reverse=True))
+# print(list3)
+# print(sorted(list3, reverse=True))
+
+arry_list = [3,11,15,0,9,580,45]
+for i in range(len(arry_list)):
+    for j in range(i+1, len(arry_list)):
+        if arry_list[i] > arry_list[j]:
+            arry_list[i],arry_list[j] = arry_list[j],arry_list[i]
+print(arry_list)
+
+
+arry_list = [11,2,56,66,9,45,22,221,45]
+arry_list = set(arry_list)  # 新的集合对象构建唯一元素的无序集合。 ＃（从类doc复制）
+arry_list = list(arry_list)
+for i in range(len(arry_list)):
+    for j in range(i+1,len(arry_list)):
+        if arry_list[i] > arry_list[j]:
+            arry_list[i],arry_list[j] = arry_list[j],arry_list[i]
+print(arry_list)
