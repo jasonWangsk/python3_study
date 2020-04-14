@@ -55,7 +55,11 @@ print(kilometers)
 # 多行合并一行 输出用分号分割
 ab = 1; ac = 2; print(ab,ac)
 
-
+# 变量数据交换
+a = 6
+b = 9
+a,b = b,a
+print(a,b)
 
 
 
