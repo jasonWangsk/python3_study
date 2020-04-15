@@ -149,3 +149,4 @@ dic = {"bs":"aaa","ll":000}
 for j in dic.items():
     print(j)
 
+print("hello".find("k"))

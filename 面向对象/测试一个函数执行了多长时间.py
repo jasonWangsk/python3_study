@@ -36,3 +36,10 @@ def fun1():
     print("fun1:",num)
 fun1()
 
+num4 = 8
+def fun6():
+    # global num4
+    num4 = 5
+    print(num4)
+fun6()
+print(num4)
