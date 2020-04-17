@@ -5,6 +5,7 @@
 
 """
 
+
 # 单向链表实现
 
 class JieDian:
@@ -35,8 +36,10 @@ class LinkList:
                 linkstr = linkstr + str(jiedian2.data) + "-->"
             else:
                 linkstr += str(jiedian2.data)
-            jiedian2 = jiedian2 .next
+            jiedian2 = jiedian2.next
         print(linkstr)
+
+
 # 声明结点
 jd1 = JieDian(7)
 jd2 = JieDian("hello")
@@ -44,9 +47,9 @@ jd3 = JieDian(8899)
 jd4 = JieDian(0)
 
 # 链表链接
-x = LinkList(jd1)
+x = LinkList(jd2)
 x.add(jd3)
-x.add(jd2)
+x.add(jd1)
 x.add(jd4)
 
 x.view()

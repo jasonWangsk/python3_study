@@ -6,6 +6,7 @@
  拆分任意偶数 = 2个质数之和
 """
 
+
 def judge_num(num):
     """判断传入参数为质数"""
     if num < 0:
@@ -17,14 +18,17 @@ def judge_num(num):
     else:
         isdata = True  # 假定是质数，判断10
         for i in range(2, num):  # 判断2-9
-            if num % i == 0: # 假如有一个被整除 跳出循环
+            if num % i == 0:  # 假如有一个被整除 跳出循环
                 isdata = False
                 break
         return isdata
 
+
 def cf(num):
     """拆分"""
-    for i in range(1,num):
-        if judge_num(i) and judge_num(num-i):
-            print(f"{num} = {i}+{num-i}")
+    for i in range(1, num):
+        if judge_num(i) and judge_num(num - i):
+            print(f"{num} = {i}+{num - i}")
+
+
 cf(34)
