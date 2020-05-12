@@ -8,6 +8,7 @@ python 列表和数组的区别
 
 # 使用内置函数sorted（）直接排序
 arr = [64, 34, 25, 12, 22, 11, 90]
+print(list.sort(arr))
 print(sorted(arr))  # 默认升序
 print(sorted(arr, reverse=True))  # 使用reverse关键字降序
 
@@ -76,4 +77,14 @@ for i in range(len(arry_list)):
     for j in range(i+1,len(arry_list)):
         if arry_list[i] > arry_list[j]:
             arry_list[i],arry_list[j] = arry_list[j],arry_list[i]
+# print(arry_list)
+
+
+arry_list = [11,2,56,66,9,45,22,221,45]
+
+for i in range(len(arry_list)):
+    for j in range(i+1,len(arry_list)):
+        if arry_list[i]>arry_list[j]:
+            arry_list[i],arry_list[j] = arry_list[j],arry_list[i]
 print(arry_list)
+

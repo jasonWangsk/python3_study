@@ -7,9 +7,11 @@ import codecs
 
 file = codecs.open("/Users/tester/Desktop/python3_study/aa.txt", "rb", "utf-8", "ignore")
 # 参数说明：第一个路径，第二个rb二进制读取，第三个参数汉字编码，第四个忽略错误
+linestr = file.readlines()  # 读取一行
 while True:
-    linestr = file.readline()  # 读取一行
-    if linestr.find("奉贤区教育局") != -1:
-        print(linestr)
-    if linestr == None:
-        break
+    names = input("输入名称：")
+    for line in linestr:
+        if line.find(names) != -1:
+            print(linestr)
+        if line == None:
+            break

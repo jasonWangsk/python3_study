@@ -6,7 +6,7 @@ random.randrange(0, 10)  生成0 - 9 不包含10
 
 import random
 
-print(random.randint(1, 3))
+print("====",random.randint(1, 3))
 
 print(random.randrange(1, 3))
 print(random.random())
@@ -24,3 +24,16 @@ print(salt)
 lisss = [23, 2, 3, 45, 6, 67]
 new = random.choices(lisss, k=3)
 print(new)
+
+sa.append(random.choice(seed))
+print(sa)
+dds = ''.join(sa)
+print(dds)
+
+length = 3
+a = 10 ** (length - 1)
+b = 10 ** length - 1
+ls = "{}".format(random.randint(a, b))
+ls2 = random.randint(a, b)
+print("-=-=-=-=-=",ls,ls2)
+print(type(ls))

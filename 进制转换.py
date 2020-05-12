@@ -22,7 +22,7 @@ import decimal
 # 十六进制/八进制/二进制 转十进制
 
 
-x = 11  # 本身就是十进制
+x = 1001  # 本身就是十进制
 y = 123.455
 print(decimal.Decimal(y))
 

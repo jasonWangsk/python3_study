@@ -1,0 +1,22 @@
+"""
+tuple
+元组不可修改内部值
+"""
+data = (1)  # type: int
+tuple_data = (1,)  # tuple
+
+print(type(data))
+print(type(tuple_data))
+
+tuples = (1,2,3,"hhh")
+
+for i in tuples:
+    print(i)
+
+# 下标循环
+for j in range(len(tuples)):
+    print(tuples[j])
+
+print(tuples[:])
+print(tuples[-2])
+print(tuples[1:3])

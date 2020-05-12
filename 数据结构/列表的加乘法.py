@@ -15,3 +15,8 @@ print(x)
 x = l1 * 3
 print(x)
 
+mylist = [1,2,3,22,11,34]
+print(mylist*2)
+
+for i in range(len(mylist)):  # 索引循环
+    print(mylist[i])
