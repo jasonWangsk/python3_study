@@ -2,6 +2,7 @@ import re
 
 
 def main():
+    """从一段文字中提取出国内手机号码"""
     # 创建正则表达式对象 使用了前瞻和回顾来保证手机号前后不应该出现数字
     pattern = re.compile(r'(?<=\D)1[34578]\d{9}(?=\D)')
     sentence = '''
@@ -11,7 +12,6 @@ def main():
     # 查找所有匹配并保存到一个列表中
     mylist = re.findall(pattern, sentence)
     print(mylist)
-
 
     print('--------华丽的分隔线--------')
     # 通过迭代器取出匹配对象并获得匹配的内容
@@ -26,5 +26,14 @@ def main():
         m = pattern.search(sentence, m.end())
 
 
+def main2():
+    """替换字符串中的不良内容"""
+    sentence = '你丫是傻叉吗? 我操你大爷的. Fuck you.'
+    purified = re.sub('[操肏艹]|fuck|shit|傻[比屄逼叉缺吊屌]|煞笔',
+                      '*', sentence, flags=re.IGNORECASE)
+    print(purified)  # 你丫是*吗? 我*你大爷的. * you.
+
+
 if __name__ == '__main__':
     main()
+    main2()
