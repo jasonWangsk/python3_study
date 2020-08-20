@@ -11,7 +11,7 @@ uml:统一建模语言
 
 class Person:
 
-    def __init__(self, name, age):
+    def __init__(self, name="老王", age='19'):
         self.name = name
         self._age = age
 
@@ -22,9 +22,10 @@ class Person:
         return self._age
 
     def play(self):
-        print(self._name() + '的年龄为：' + self.age())
+        print(self._name() + '的年龄为：' + self._age)
 
 
-person = Person("oldwanw", "15")
+person = Person()
 person._age = '16'
+# person.name = "hhhhh"
 person.play()
