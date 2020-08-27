@@ -16,6 +16,26 @@ list4 = [list3]
 
 """
 
+# 遍历列表中嵌套字典 输出不同的字典
+list_a = [{"name":"jason","age":18,"ps":9},
+        {"name": "kkaa", "age": 30, "ps": 0}]
+
+list_new = [{"name":"jason","age":18,"ps":9},
+        {"name": "kkaa", "age": 30, "ps": 0},
+         {"name": "cc", "age": 20, "ps": 0}]
+
+data_source = None
+
+for one in list_new:
+    if one not in list_a:
+        data_source = one
+        print(data_source)
+# 结合接口测试返回进行断言。。。
+assert data_source != None
+assert data_source['name'] == "cc"
+# -------------------------------------
+
+
 list1 = ["a","b"]
 list2 = ["c","d"]
 list3 = [list1, list2]  # 二维数组
